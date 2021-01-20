@@ -44,22 +44,6 @@ p {
   background-color: #fff;
 }
 
-@media (max-width: 800px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-      "main"
-      "aside"
-      "footer";
-  }
-
-  .aside {
-    background-size: 150%;
-    background-position-x: -50px;
-  }
-}
-
 /* Main */
 .main {
   display: flex;
@@ -202,4 +186,20 @@ p {
   font-size: 13px;
   line-height: 17px;
   margin: 0;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "main"
+      "aside"
+      "footer";
+  }
+
+  .aside {
+    background-size: 150%;
+    background-position-x: -50px;
+  }
 }
